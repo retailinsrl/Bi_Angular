@@ -1,37 +1,10 @@
-<!-- <qdt-component [component]="viz1.component" [properties]="viz1.properties" [connection]="viz1.connection" [style]="viz1.style"></qdt-component>
-<qdt-component [component]="viz2.component" [properties]="viz2.properties" [connection]="viz2.connection" [style]="viz2.style"></qdt-component>
-<qdt-component [component]="viz3.component" [properties]="viz3.properties" [connection]="viz3.connection" [options]="viz3.options" [style]="viz3.style"></qdt-component>
-<qdt-component [options]="viz4.options" [connection]="viz4.connection" [style]="viz4.style"></qdt-component>   -->
-<!-- <h1>hi hi hi</h1>
-<div class="container"> 
-  <div class="header">
-    <app-header></app-header>
-  </div>
-  <div class="main-container">
-    <div class="side-nav">
-      <app-side-nav>
-    </app-side-nav>
-  </div>
-    <div class="main">
-      <app-main>
-      
-    </app-main>
-  </div>
-  </div>
-</div>
- -->
-
- <!-- <div class="container">
-    <div class="header">
-      <app-header></app-header>
-    </div>
-    <div class="main-container">
-      <div class="side-nav">
-        <app-side-nav></app-side-nav>
-      </div>
-      <div class="main">
-        <app-main></app-main>
-      </div>
-    </div>
-  </div> -->
-
+<mat-drawer-container>
+  <mat-drawer mode="side" [opened]="sideBarOpen">
+    <!-- <mat-drawer mode="side" opened="true"> -->
+    <app-sidenav></app-sidenav>
+  </mat-drawer>
+  <mat-drawer-content>
+    <app-header (toggleSidebarForMe)="sideBarToggler()"></app-header>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

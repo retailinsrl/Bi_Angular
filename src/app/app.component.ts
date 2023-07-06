@@ -10,6 +10,13 @@ import {
 })
 
 export class AppComponent {
+  title = 'admin-panel-layout';
+  sideBarOpen = true;
+
+  sideBarToggler() {
+    this.sideBarOpen = !this.sideBarOpen;
+  }
+
 	viz1 = {
     component: QdtSelections,
     properties: {
@@ -84,5 +91,8 @@ export class AppComponent {
     }
   };
   
-  title = 'qdt-angular-v4';
+  qdtTitle = 'qdt-angular-v4';
+
+
+  
 }
