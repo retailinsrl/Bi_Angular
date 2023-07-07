@@ -20,7 +20,7 @@ pipeline {
         stage('Clean') {
             steps {
                 echo 'Deploy...'
-                sh 'sudo rm -rf /var/www/html/dev.retailin.it/public_html/qdt/dist/'
+                sh 'sudo rm -rf /var/www/html/dev.retailin.it/public_html/qdt/'
                 sh 'sudo mv dist/* /var/www/html/dev.retailin.it/public_html'
             }
         }
