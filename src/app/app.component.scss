@@ -6,10 +6,15 @@
   
   mat-drawer {
     width: 260px;
-    background-color: #1e293b;
+    background: #1e293b;
   }
   mat-drawer-container {
     height: 100%;
   }
+
+  .new{
+    background: red($color: #000000);
+  }
   
+
  

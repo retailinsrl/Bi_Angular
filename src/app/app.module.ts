@@ -14,6 +14,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
+import { HighchartsComponent } from './highcharts/highcharts.component';
 
 
 
@@ -24,6 +25,7 @@ import { MatListModule } from '@angular/material/list';
     HeaderComponent,
     HomeComponent,
     SidenavComponent,
+    HighchartsComponent,
   ],
   imports: [
     BrowserModule,
