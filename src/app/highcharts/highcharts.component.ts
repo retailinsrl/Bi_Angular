@@ -9,13 +9,15 @@ import * as Highcharts from 'highcharts';
 export class HighchartsComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     Highcharts.chart('chartContainer', {
+      
       title: {
         text: 'Passive Income through years'
       },
       series: [{
-        type:'line' ,
+        type:'pie' ,
         data: [1, 3, 2, 4,6,5,4,3,2,1,4,6,7,8,8,5]
       }]
+      
     });
     
   }
