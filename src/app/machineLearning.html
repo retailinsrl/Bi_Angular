@@ -1,0 +1,58 @@
+
+<div class="row " >
+    <div class="col-12 shopSection sinCenter" id="shopSelectionSection" >
+        <div class="custom-select-wrapper" style="background-color:#E6E6E6; height:50px;  ">
+ 
+            <select id="shopSelection" name="shopSelection" onchange="changeShop()" class="js-example-data-array-selected custom-select  "  ">
+		
+                <div class="custom-select-dropdown ">   
+		<option id="53" value="biscollai"  data-selectedShop="biscollai" selected > Biscollai (NU) 
+ </option>
+                <option id="49" value="olbiabasa" data-selectedShop="olbiabasa"> Olbia Basa (OT) 
+ </option>
+ 		<option id="131" value="marinedda" data-selectedShop="marinedda"> Olbia Marinedda (OT) 
+ </option>
+		 </div>
+		</div>   
+      
+</select>
+        </div>
+    </div>
+</div>
+
+
+<div class="pagina-padding">
+ <div class="row>
+    <div class="row sinCenter">
+        <h3 >MONTE ORE</h3>
+    </div>
+    <!-- Income prediction section -->
+	<div id="container_table">
+
+	</div>
+
+
+
+ <div class="row ">
+    <div class="row sinCenter">
+        <h3 >INCOME PREDICTION</h3>
+    </div>
+    <!-- Income prediction section -->
+    <div id="incomePredictionSection">
+        <div id="incomeContainer" style="width: 100%;">
+            <!-- Here the income graph -->
+        </div>
+    </div>
+</div>
+
+</div>
+
+   
+</div>
+<script type="module">
+    import { changeShop } from './js/module_highcharts.js';
+    import { sendDataForm } from './js/module_highcharts.js';
+    window.changeShop = changeShop;
+    window.sendDataForm = sendDataForm;
+</script>
+

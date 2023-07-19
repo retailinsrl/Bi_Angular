@@ -15,6 +15,16 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { HighchartsComponent } from './highcharts/highcharts.component';
+import { TableComponent } from './table/table.component';
+import { MachinelearningComponent } from './machinelearning/machinelearning.component';
+import { ComparisonComponent } from './comparison/comparison.component';
+import { QuickviewComponent } from './quickview/quickview.component';
+import { AnalysisComponent } from './analysis/analysis.component';
+ import { ShopSelectComponent } from './shop-select/shop-select.component';
+import {ApiService} from './api.service';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { SelectProvaaComponent } from './select-provaa/select-provaa.component';
 
 
 
@@ -26,8 +36,16 @@ import { HighchartsComponent } from './highcharts/highcharts.component';
     HomeComponent,
     SidenavComponent,
     HighchartsComponent,
+    TableComponent,
+    MachinelearningComponent,
+    ComparisonComponent,
+    QuickviewComponent,
+    AnalysisComponent,
+     ShopSelectComponent,
+     SelectProvaaComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -38,9 +56,11 @@ import { HighchartsComponent } from './highcharts/highcharts.component';
     MatIconModule,
     MatDividerModule,
     MatListModule,
+    FormsModule,
+   
     
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

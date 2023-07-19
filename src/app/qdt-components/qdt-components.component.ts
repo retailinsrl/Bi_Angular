@@ -53,6 +53,7 @@ export class QdtComponentsComponent implements OnInit {
     }
   }
 
+  
   ngOnInit() {
     this.init();
   }

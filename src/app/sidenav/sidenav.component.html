@@ -6,13 +6,21 @@
     <h2 matSubheader class="mt-2">APPLICATION</h2>
   
     <a mat-list-item routerLinkActive="list-item-active" routerLink="/home">
-      <mat-icon>home</mat-icon> <span style="color: white;">Quick View</span>
+      <mat-icon>home</mat-icon> <span style="color: white;">Home</span>
     </a>
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard">
-      <mat-icon>dashboard</mat-icon> <span style="color: white;">Analysis</span>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/quickview">
+      <mat-icon>forward</mat-icon> <span style="color: white;">Quick View</span>
     </a>
-    <a mat-list-item class="text-white"><mat-icon>edit</mat-icon> <span style="color: white;">Comparison</span> </a>
-    <a mat-list-item class="links"><mat-icon>edit</mat-icon><span style="color: white;">Machile Learning</span> </a>
-    <a mat-list-item class="links"><mat-icon>edit</mat-icon> <span style="color: white;">Link 5</span></a>
-    <a mat-list-item class="links"><mat-icon>edit</mat-icon><span style="color: white;">Link 6</span> </a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/analysis">
+      <mat-icon>data_usage</mat-icon> <span style="color: white;">Analysis</span>
+    </a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/machinelearning">
+      <mat-icon>code</mat-icon> <span style="color: white;">Machine Learning</span>
+    </a>
+    
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/comparison">
+      <mat-icon>compare_arrows</mat-icon> <span style="color: white;">Comparison</span>
+    </a>
+    <a mat-list-item class="text-white"><mat-icon>dashboard</mat-icon> <span style="color: white;">Other</span> </a>
+    
   </mat-nav-list>
