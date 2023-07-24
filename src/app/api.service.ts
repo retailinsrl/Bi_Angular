@@ -11,11 +11,12 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  // GET request example
+  //GET request example
   public getData(selectedShopId: string) {
     const url = `${this.apiUrl}/employee-shifts?selectedShopId=${encodeURIComponent(selectedShopId)}`;
     return this.http.get(url);
   }
+
 
   
   public getIncomePrediction(data: any): Observable<any> {
@@ -56,7 +57,15 @@ export class ApiService {
     );
   }
   
-
+//   public async getData(selectedShopId: string): Promise<any> {
+//     const url = `${this.apiUrl}/employee-shifts?selectedShopId=${encodeURIComponent(selectedShopId)}`;
+//     const res_employee_shifts = await this.http.get(url).toPromise();
+//     const res_json_employee_shifts = res_employee_shifts as any;
+//     console.log("res_json_employee_shifts: ");
+//     console.log(res_json_employee_shifts);
+//     return res_json_employee_shifts;
+//   }
+// }
   
   
   // POST request example

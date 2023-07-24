@@ -110,8 +110,8 @@ console.log("data: "+data);
                                              });
          let res_json_employee_shifts = {};
         res_json_employee_shifts = await res_employee_shifts.json();
-        console.table("res_json_employee_shifts: ")
-        console.table(res_json_employee_shifts)
+        console.log("res_json_employee_shifts: ")
+        console.log(res_json_employee_shifts)
 
       
 

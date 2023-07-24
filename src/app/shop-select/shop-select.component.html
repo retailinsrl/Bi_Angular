@@ -1,21 +1,16 @@
 <div class="container-fluid page">
-    <div class="d-flex page__box p-3 mt-2"></div>
-    <div class="page__content shadow p-3 position-relative">
-      <div class="page__content-data position-absolute text-center">
-          <select id="shopSelection" [(ngModel)]="selectedShopId" (ngModelChange)="onShopSelect()">
-            <option value="">Select Shop</option>
-            <option  [ngValue]=53>Biscollai (NU)</option>
-            <option  [ngValue]=49>Olbiabasa (OT)</option>
-            <option  [ngValue]=131>Marinedda (OT)</option>
-            </select>
-            <!-- <div *ngFor="let item of ">
-              <p>{{ item.data }}</p>
-              <p>{{ item.id }}</p>
-              <!-- Add other properties you want to display   </div> -->
-             <h1>the selected shop is {{selectedShopId}}</h1>
+  <div class="d-flex page__box p-3 mt-2"></div>
+  <div class="page__content shadow p-3 position-relative">
+    <div class="page__content-data position-absolute text-center">
+        <select id="shopSelection" [(ngModel)]="selectedShopId" (ngModelChange)="onShopSelect()">
+          <option value="">Select Shop</option>
+          <option  [ngValue]=53>Biscollai (NU)</option>
+          <option  [ngValue]=49>Olbiabasa (OT)</option>
+          <option  [ngValue]=131>Marinedda (OT)</option>
+          </select>
+         
+           <h1>the selected shop is {{selectedShopId}}</h1>
 
-          </div>
-    </div>
+        </div>
   </div>
-
-  
+</div>

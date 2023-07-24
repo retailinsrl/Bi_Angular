@@ -7,7 +7,6 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { QdtComponent } from './qdt/qdt.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
@@ -22,10 +21,12 @@ import { QuickviewComponent } from './quickview/quickview.component';
 import { AnalysisComponent } from './analysis/analysis.component';
  import { ShopSelectComponent } from './shop-select/shop-select.component';
 import {ApiService} from './api.service';
+import { ShopSelectionService } from './shop-selection-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { SelectProvaaComponent } from './select-provaa/select-provaa.component';
-
+import { PivotTableComponent } from './pivot-table/pivot-table.component';
+import {DataTablesModule} from 'angular-datatables';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { SelectProvaaComponent } from './select-provaa/select-provaa.component';
     AnalysisComponent,
      ShopSelectComponent,
      SelectProvaaComponent,
+     PivotTableComponent,
   ],
   imports: [
     HttpClientModule,
@@ -57,10 +59,10 @@ import { SelectProvaaComponent } from './select-provaa/select-provaa.component';
     MatDividerModule,
     MatListModule,
     FormsModule,
-   
+    DataTablesModule,
     
   ],
-  providers: [ApiService],
+  providers: [ApiService,ShopSelectionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

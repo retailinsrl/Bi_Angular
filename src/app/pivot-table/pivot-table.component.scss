@@ -1,0 +1,16 @@
+#container_table{
+
+	height: 40vh; /* Adjust the height as needed */
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+
+}
+#container_table th {
+    background-color: #E6E6E6;
+    border-bottom: 1px solid #ddd;
+    }
+    #container_table td {
+    border-bottom: 1px solid #ddd;
+    }
+    
